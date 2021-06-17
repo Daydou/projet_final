@@ -598,7 +598,7 @@ foreach($data_pib as $key  => $value){
                                  </tr>
                                  <tr>
                                     <td id="clef">PIB</td>
-                                    <td>12344</td>
+                                    <td>12344234</td>
                                  </tr>
                                  <tr>
                                     <td id="clef">Consommation electricite</td>
@@ -637,10 +637,10 @@ foreach($data_pib as $key  => $value){
                </div>
 
                   <div class="cercletext">
-                     <div class="cercletext1"> 4000 <</div>
-                     <div class="cercletext2">123456</div>
-                     <div class="cercletext3">12345</div>
-                     <div class="cercletext4">1234</div>
+                     <div class="cercletext1"> 4000$ ></div>
+                     <div class="cercletext2">2250-4000$</div>
+                     <div class="cercletext3">999$-2249$</div>
+                     <div class="cercletext4">< 1000$</div>
                </div>
 
       </div>
