@@ -638,7 +638,7 @@ foreach($data_pib as $key  => $value){
 
                   <div class="cercletext">
                      <div class="cercletext1"> 4000$ ></div>
-                     <div class="cercletext2">2250-4000$</div>
+                     <div class="cercletext2">2250$-4000$</div>
                      <div class="cercletext3">999$-2249$</div>
                      <div class="cercletext4">< 1000$</div>
                </div>
