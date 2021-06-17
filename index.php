@@ -26,7 +26,7 @@ $pibAbove4000 = NULL ;
 try
 {
     $PDO = new PDO($DB_DSN,$DB_USER,$DB_PASS);
-    echo 'Connexion établie';  
+     
 }
 
 catch(PDOException $pe)
@@ -161,10 +161,8 @@ foreach($data_pib as $key  => $value){
 <body>
       <nav class="navbar">
          <ul class="links">
-            <li><a href="http://">Home</a></li>
-            <li><a href="http://">About</a></li>
-            
-         
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index_about.php">About</a></li>
          </ul> 
       </nav>
 
@@ -172,28 +170,17 @@ foreach($data_pib as $key  => $value){
 
 
       <div class="texte_header_v2">
+         <div class="little_area">
+         <h1> La destinée de l'Afrique liée à son électrification </h1>
+            <h3> Le contienent africain fait face à de nombreux défis pour son développement économique. Parmi eux, l'extension de l'accès à l'électricité sur l'ensemble du continent.  Celle-ci impacte et limite l'acroissement des richesse produites dans les pays où le taux d'accès est limité </h3>
 
-      <h1>La destinée de l'Afrique liée à son électrification </h1>
-      <h3> Le contienent africain fait face à de nombreux défis pour son développement économique. Parmi eux, l'extension de l'accès à l'électricité sur l'ensemble du continent.  Celle-ci impacte et limite l'acroissement des richesse produites dans les pays où le taux d'accès est limité </h3>
+         </div>
+
       
-      
+ 
       </div>
 
   
-        <!-- <h1> L'Afrique : son électricté et son PIB en chute ? </h1>
-        
-        
-         </br>
-        <div id="texte">
-           <strong>  Nous allons ici vous présenter notre projet qui est : L'Afrique son électricité & son PIB.
-            Malheureusement, nous pouvons observer que l'Afrique est l'un des rares continent où une bonne partie des pays vit avec très peu d'électricité voir sans et ne parlons même pas du PIB.
-            Nous avons fait des recherches , ici , notre but sera de mettre en avant les problèmes que ce continent peut rencontrer et proposer des solutions .  
-            Nous pouvons comparer 2 pays : le <strong> NIGERIA </strong> avec 395 milliards de dollars de PIB/hab & <strong> Malawi</strong> avec 250,4 dollars de PIB par habitant.
-         </strong>
-        </div>
-        
-        </br> -->
-        
       <main>
 
          
@@ -205,7 +192,7 @@ foreach($data_pib as $key  => $value){
 
             <div id="map__image">
 
-               <svg transform="scale(3)" width="239.05701" height="217.31789" version="1.1">
+               <svg transform="scale(3.25)" width="239.05701" height="217.31789" version="1.1">
 
                   <defs   id="defs261" />
 
@@ -509,74 +496,66 @@ foreach($data_pib as $key  => $value){
                      
 
 
-                     <!-- <?= $pibUnder100 ?>  -->
-                     <!-- <?= $pibBetween999_2250 ?>  -->
-                     <!-- <?= $pibBetween2249_4000 ?>  -->
-                     <!-- <?= $pibAbove4000 ?>  -->
-
-
-
-
 
 
                            <!-- Afrique du sud -->
-                           <circle class="pibAbove4000" id="ZAF1"       cx="140" cy="200" r="10" fill="red"  />       
-                           <circle class="pibBetween2249_4000 " id="DZA1"       cx="80" cy="30" r="10" fill="red"  />
-                           <circle class="pibBetween2249_4000 " id="AGO1"       cx="120" cy="150" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="BEN1"       cx="80" cy="80" r="10" fill="red"  />
-                           <circle class="pibAbove4000" id="BWA1"       cx="140" cy="180" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="BFA1"      cx="70" cy="76" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="BDI1"       cx="156" cy="125" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250 " id="CPV1"       cx="1" cy="65" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="CMR1"       cx="109" cy="97" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="COM1"       cx="195" cy="148" r="10" fill="red"  />
+                           <circle class="pibAbove4000" id="ZAF1"       cx="140" cy="200" r="10" fill="red"  fill-opacity="90%"  />       
+                           <circle class="pibBetween2249_4000 " id="DZA1"       cx="80" cy="30" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween2249_4000 " id="AGO1"       cx="120" cy="150" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="BEN1"       cx="80" cy="80" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibAbove4000" id="BWA1"       cx="140" cy="180" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="BFA1"      cx="70" cy="76" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="BDI1"       cx="156" cy="125" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250 " id="CPV1"       cx="1" cy="65" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="CMR1"       cx="109" cy="97" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="COM1"       cx="195" cy="148" r="10" fill="red"  fill-opacity="90%"  />
                            <!-- Congo RDC -->
-                           <circle class="pibUnder100" id="COD1"       cx="140" cy="120" r="10" fill="red"  />
+                           <circle class="pibUnder100" id="COD1"       cx="140" cy="120" r="10" fill="red"  fill-opacity="90%"  />
                            <!-- Congo Brazaville -->
-                           <circle class="pibUnder100" id="COG1"       cx="115" cy="120" r="10" fill="red"  />
-                           <circle class="pibBetween2249_4000 " id="CIV1"       cx="70" cy="95" r="10" fill="red"  />
-                           <circle class="pibUnder100" id="ERI1"   cx="180" cy="68" r="10" fill="red"  />
-                           <circle class="pibUnder100" id="ETH1"   cx="180" cy="85" r="10" fill="red"  />
-                           <circle class="pibAbove4000" id="GAB1"   cx="105" cy="115" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="GAM1"   cx="25" cy="77" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250 " id="GAN1" cx="70" cy="90" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="GIN1" cx="36" cy="82" r="10" fill="red"  />
-                           <circle class="pibAbove4000" id="GNQ1" cx="100" cy="100" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="GNB1" cx="21" cy="70" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="KEN1" cx="175" cy="110" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="LSO1" cx="150" cy="200" r="10" fill="red"  />
-                           <circle class="pibUnder100" id="LBR1" cx="45" cy="100" r="10" fill="red"  />
-                           <circle class="pibUnder100" id="MDG1" cx="200" cy="177" r="10" fill="red"  />
-                           <circle class="pibUnder100" id="MWI1" cx="170" cy="150" r="10" fill="red"  />
-                           <circle class="pibUnder100" id="MLI1" cx="63" cy="65" r="10" fill="red"  />
-                           <circle class="pibAbove4000" id="MUS1" cx="230" cy="177" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="MRT1" cx="40" cy="60" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="MOZ1" cx="180" cy="160" r="10" fill="red"  />
-                           <circle class="pibAbove4000" id="NAM1" cx="120" cy="177" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="NER1" cx="98" cy="60" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="NGA1"       cx="98" cy="85" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="UGA1" cx="160" cy="105" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="CAF1" cx="130" cy="90" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="RWA1" cx="160" cy="120" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="STP1"       cx="90" cy="110" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="SEN1"       cx="30" cy="70" r="10" fill="red"  />
-                           <circle class="pibAbove4000" id="SYC1"cx="225" cy="125" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="SLE1"cx="40" cy="90" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="SOM1"cx="210" cy="85" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="SDN1"cx="160" cy="65" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="SSD1"cx="160" cy="95" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="TZA1"       cx="175" cy="130" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="TCD1"       cx="125" cy="70" r="10" fill="red"  />
-                           <circle class="pibUnder100 " id="TGO1"       cx="75" cy="95" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="ZMB1"       cx="150" cy="155" r="10" fill="red"  />
-                           <circle class="pibBetween999_2250" id="ZWE1"       cx="160" cy="170" r="10" fill="red"  />
-                           <circle class="pibBetween2249_4000 " id="DJI1"       cx="190" cy="78" r="10" fill="red"  />
-                           <circle class="pibBetween2249_4000 " id="EGY1"       cx="155" cy="40" r="10" fill="red" />
-                           <circle class="NoInfo" id="WSR1"       cx="30" cy="40" r="10" fill="red"  />
-                           <circle class="pibAbove4000" id= "LBY1"      cx="120" cy="35" r="10" fill="red"  />
-                           <circle class="pibBetween2249_4000 " id= "MAR1"      cx="55" cy="20" r="10" fill="red"  />
-                           <circle class="pibBetween2249_4000 " id= "SWZ1"      cx="160" cy="190" r="10" fill="red"  />
-                           <circle class="pibBetween2249_4000 " id= "TUN1"      cx="100" cy="10" r="10" fill="red"  />
+                           <circle class="pibUnder100" id="COG1"       cx="115" cy="120" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween2249_4000 " id="CIV1"       cx="70" cy="95" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100" id="ERI1"   cx="180" cy="68" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100" id="ETH1"   cx="180" cy="85" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibAbove4000" id="GAB1"   cx="105" cy="115" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="GAM1"   cx="25" cy="77" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250 " id="GAN1" cx="70" cy="90" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="GIN1" cx="36" cy="82" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibAbove4000" id="GNQ1" cx="100" cy="100" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="GNB1" cx="21" cy="70" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="KEN1" cx="175" cy="110" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="LSO1" cx="150" cy="200" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100" id="LBR1" cx="45" cy="100" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100" id="MDG1" cx="200" cy="177" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100" id="MWI1" cx="170" cy="150" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100" id="MLI1" cx="63" cy="65" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibAbove4000" id="MUS1" cx="230" cy="177" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="MRT1" cx="40" cy="60" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="MOZ1" cx="180" cy="160" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibAbove4000" id="NAM1" cx="120" cy="177" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="NER1" cx="98" cy="60" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="NGA1"       cx="98" cy="85" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="UGA1" cx="160" cy="105" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="CAF1" cx="130" cy="90" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="RWA1" cx="160" cy="120" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="STP1"       cx="90" cy="110" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="SEN1"       cx="30" cy="70" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibAbove4000" id="SYC1"cx="225" cy="125" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="SLE1"cx="40" cy="90" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="SOM1"cx="210" cy="85" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="SDN1"cx="160" cy="65" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="SSD1"cx="160" cy="95" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="TZA1"       cx="175" cy="130" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="TCD1"       cx="125" cy="70" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibUnder100 " id="TGO1"       cx="75" cy="95" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="ZMB1"       cx="150" cy="155" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween999_2250" id="ZWE1"       cx="160" cy="170" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween2249_4000 " id="DJI1"       cx="190" cy="78" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween2249_4000 " id="EGY1"       cx="155" cy="40" r="10" fill="red"  fill-opacity="90%" />
+                           <circle class="NoInfo" id="WSR1"       cx="30" cy="40" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibAbove4000" id= "LBY1"      cx="120" cy="35" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween2249_4000 " id= "MAR1"      cx="55" cy="20" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween2249_4000 " id= "SWZ1"      cx="160" cy="190" r="10" fill="red"  fill-opacity="90%"  />
+                           <circle class="pibBetween2249_4000 " id= "TUN1"      cx="100" cy="10" r="10" fill="red"  fill-opacity="90%"  />
 
 
                      </svg>
@@ -601,7 +580,7 @@ foreach($data_pib as $key  => $value){
                                     <td>12344234</td>
                                  </tr>
                                  <tr>
-                                    <td id="clef">Consommation electricite</td>
+                                    <td id="clef">Taux d'accès à l'électricité </td>
                                     <td>467899kWh</td>
                                  </tr>
                            </table>
@@ -612,8 +591,9 @@ foreach($data_pib as $key  => $value){
 
 
 
-      <div class="legende">
+                     <div class="legende">
             <div class="couleur">
+            <div class="tc">Taux d'accès à l'éléctricité</div>
                <div class="couleur1"></div>
                <div class="couleur2"></div>
                <div class="couleur3"></div>
@@ -630,6 +610,7 @@ foreach($data_pib as $key  => $value){
 
 
                <div class="cercle">
+               <div class="tc1">PIB</div>
                   <div class="cercle1"></div>
                   <div class="cercle2"></div>
                   <div class="cercle3"></div>
@@ -644,7 +625,6 @@ foreach($data_pib as $key  => $value){
                </div>
 
       </div>
-
 
 
 
